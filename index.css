@@ -1,0 +1,326 @@
+:root{
+    --headcolor:#66FCF1;
+    --headcolor2:rgb(35, 191, 181);
+    --bgcolor:#121212;
+    --quescont:#181818;
+    --opcolor:#C5C6C7;
+    --opselected:#730C02;
+    --nxtcolor:#45A29E;
+}
+*{
+    padding: 0;
+    margin: 0;
+    font-family: "Roboto";
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    height: 100vh;
+    padding: 150px 75px;
+    overflow-y: hidden; /* Hide vertical scrollbar */
+    overflow-x: hidden;
+    background-color: var(--bgcolor) !important;
+    /* background-image:url("/imgs/bgimg.jpeg"); */
+    /* background-size:cover; */
+    /* text-align: center; */
+}
+#main{
+    height: 100vh;
+}
+h1{
+    align-items: center;
+    font-size: 50px;
+    text-align: center;
+
+}
+p{
+    font-size: 18px;
+    font-weight: 400;
+}
+.text-cont{
+    width:35%;
+ }
+.text{
+    font-family: "Roboto";
+    font: bold;
+    height: 80px;
+    position: absolute;
+    top:0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    margin: auto;
+}
+.typewriter h1 {
+    color: var(--headcolor);
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .1em solid; /* The typwriter cursor */
+    border-color:var(--nxtcolor); 
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    /* letter-spacing: .15em; Adjust as needed */
+    animation: typing 3.5s steps(20, end), blink-caret .5s step-end infinite forwards;
+}
+.para{
+    color:var(--opcolor);
+    font-weight: bold;
+}
+
+/* The typing effect */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+50% { border-color: var(--nxtcolor) }
+}
+/* #cursor{
+    animation: blink .75s linear infinite;
+} */
+ 
+.button{
+    padding: 20px ;
+    font-size: 27px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 800;
+    text-align: center;
+    cursor: pointer;
+    outline: #393E46;
+    color: var(--bgcolor);
+    background-color: var(--headcolor2);
+    border: none;
+    border-radius: 50px;
+    box-shadow: 0 8px #1F2833;
+    position: absolute;
+    top: 55%;
+    right: 42.5%;
+    z-index: 2;
+}
+.button:hover{
+    background-color: var(--nxtcolor);
+}
+.button:active{
+    background-color: var(--nxtcolor);
+    box-shadow: 0 4px #666;
+    transform: translateY(3px);
+}
+.topleft{
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    animation:fade 2s 0.5s forwards;
+}
+.topright{
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 20%;
+    right: 1%;
+    animation:fade 2s 1s forwards;
+
+}
+.middleright{
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 55%;
+    animation:fade 2s 1.5s forwards;
+
+}
+.middleleft{
+    opacity: 0;
+    padding: 20px;
+    position: absolute;
+    top: 48%;
+    right: 1%;
+    animation:fade 2s 2s forwards;
+}
+.middledown{
+    opacity: 0;
+    align-items: center;
+    padding: 20px;
+    position: absolute;
+    top: 82%;
+    right: 35%;
+    animation:fade 2s 2.5s forwards;
+}
+.circular-div {
+    width: 30px; 
+    height: 30px; 
+    border-radius: 50%;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.circular-div img {
+    width: 30px;
+    height: 30px;
+}
+
+
+#circular-div-container {
+    position: absolute;
+    bottom: 5%; 
+    right: 3%; 
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+
+@keyframes fade{
+    0%{
+        opacity: 0;
+    }
+    20%{
+        opacity: 0.2;
+    }
+    30%{
+        opacity: 0.5;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+.circle{
+    width: 50px;
+    height: 50px;
+    position:absolute;
+    border-radius: 100%;
+    opacity: 0.7;
+    cursor: pointer;
+    z-index: -1;
+}
+.img{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width:1400px) {
+    h1{
+        font-size: 30px !important;
+    }
+    .button{
+
+        font-size: 27px;
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        font-weight: 800;
+        text-align: center;
+        cursor: pointer;
+        outline: #393E46;
+        color: var(--bgcolor);
+        background-color: var(--headcolor2);
+        border: none;
+        border-radius: 50px;
+        box-shadow: 0 8px #1F2833;
+        width:50%;
+
+        position:absolute;
+        top:60%;
+        left:25%;
+        z-index: 2;
+    }
+    .typewriter h1 {
+        color: var(--headcolor);
+        overflow: hidden; 
+        border-right: .1em solid; 
+        border-color:var(--nxtcolor); 
+        white-space: nowrap;
+        margin: 0 auto; 
+
+        animation: typing 3.5s steps(20, end), blink-caret .5s step-end infinite forwards;
+    }
+    .para{
+        color:var(--opcolor);
+        font-weight: bold;
+    }
+    .text-cont{
+        width:100%;
+
+     }
+    
+
+    @keyframes typing {
+        from { width: 0 }
+        to { width: 100% }
+    }
+    
+    @keyframes blink-caret {
+        from, to { border-color: transparent }
+    50% { border-color: var(--nxtcolor) }
+    }
+    .topleft{
+        opacity: 0;
+        /* padding: 20px; */
+        position: absolute;
+        top: 20%;
+        text-align: center;
+        animation:fade 2s 0.5s forwards;
+        font-size: 20px;
+        visibility: hidden;
+    }
+    .topright{
+        visibility: hidden;
+        opacity: 0;
+        padding: 20px;
+        position: absolute;
+        top: 40%;
+        right: 1%;
+        animation:fade 2s 1s forwards;
+        font-size: 20px;
+    
+    }
+    .middleright{
+        visibility: hidden;
+        opacity: 0;
+        padding: 20px;
+        position: absolute;
+        top: 60%;
+        animation:fade 2s 1.5s forwards;
+        font-size: 20px;
+    
+    }
+    .middleleft{
+        visibility: hidden;
+        opacity: 0;
+        padding: 20px;
+        position: absolute;
+        top: 80%;
+        right: 1%;
+        font-size: 20px;
+        animation:fade 2s 2s forwards;
+    }
+    .middledown{
+        visibility: hidden;
+        opacity: 0;
+        font-size: 20px;
+        align-items: center;
+        padding: 20px;
+        position: absolute;
+        top: 90%;
+        right: 35%;
+        animation:fade 2s 2.5s forwards;
+    }
+    
+    #circular-div-container {
+        position: absolute;
+        bottom: -10%; 
+        right: 3%; 
+        display: flex;
+        flex-direction: row; 
+        align-items: center;
+    }
+}
