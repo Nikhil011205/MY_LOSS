@@ -8,4 +8,4 @@ With The Help Of Neural Networking And Answering our simple Questionnaire You Wi
 ## HOW TO USE MY-LOSS
 
 Just Click The Link To Your Right Or the Link Below To Get Started!
-[Linux Youself NOW!](nikhil011205.github.io/MY_LOSS/)
+[Linux Youself NOW!](https://nikhil011205.github.io/MY_LOSS/)
