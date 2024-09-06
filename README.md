@@ -10,4 +10,4 @@ With The Help Of Neural Networking And Answering our simple Questionnaire You Wi
 Just Click The Link To Your Right Or the Link Below To Get Started!
 [Linux Youself NOW!](https://nikhil011205.github.io/MY_LOSS/)
 
-Made By Nikhil
+Made By Nikhil Y N and Praneel Sindhole
