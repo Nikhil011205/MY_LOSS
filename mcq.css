@@ -417,7 +417,8 @@ li:hover{
     }
     .ques-container{
         height: 75vh;
-        margin-top:-10px;
+        /* margin-top:10px; */
+        transform: translate(0%,-7%);
     }
     .op-cont{
         margin-top:15px;
@@ -439,7 +440,7 @@ li:hover{
         transform: scale(0.8);
     }
     .button{
-        height: 40px;
+        height: 30px;
     }
     .mcqcont{
         margin-bottom:0px;
@@ -458,6 +459,13 @@ li:hover{
         height: 30px;
         width: 30px;
     }
+    .runner-pod{
+        transform: scale(0.8);
+    }
+    .winner-pod{
+        transform: scale(0.8);
+    }
+
 }
 
 @media screen and (min-width:415px) and (max-width: 516px){
@@ -466,8 +474,9 @@ li:hover{
         font-size: 25px;
     }
     .ques-container{
-        height: 70vh;
-        margin-top:-10px;
+        height: 75vh;
+        /* margin-top:-10px; */
+        transform: translate(0%,-5%);
     }
     .op-cont{
         margin-top:20px;
@@ -502,6 +511,12 @@ li:hover{
     .mcqcont{
         margin-bottom:0px;
     }
+    .runner-pod{
+        transform: scale(0.9);
+    }
+    .winner-pod{
+        transform: scale(0.9);
+    }
 }
 
 @media screen and (min-width:516px) and (max-width: 768px){
@@ -520,7 +535,6 @@ li:hover{
         margin-bottom:0px;
     }
 }
-
 @media screen and (min-width:768px) and (max-width: 992px){
     .ques-container{
         height: 80vh;
