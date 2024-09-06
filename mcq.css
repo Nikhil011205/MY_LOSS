@@ -357,6 +357,7 @@ li:hover{
     } */
 }
 
+
 @media screen and (min-height:900px) {
     .ques-container{
         height: 65vh;
@@ -552,8 +553,47 @@ li:hover{
     }
 }
 
-/* @media screen and (min-width:1000px) and (min-height:692px){
-    .ques-container{
-        height: 100vh;
+@media screen and (max-height:800px) and (min-height:700px) {
+    .mcq{
+        margin-bottom: 10px;
+        height: 80px !important;
     }
-} */
+    .ans{
+        line-height: 80px;
+        padding:0px;
+        font-size: 20px;
+    }
+    .button{
+        height: 40px;
+    }
+}
+
+@media screen and (max-height:700px) and (min-height:620px) {
+    .mcq{
+        margin-bottom: 10px;
+        height: 70px !important;
+    }
+    .ans{
+        line-height: 70px;
+        padding:0px;
+        font-size: 20px;
+    }
+    .button{
+        height: 30px;
+    }
+}
+
+@media screen and (max-height:620px) and (min-height:570px) {
+    .mcq{
+        margin-bottom: 10px;
+        height: 60px !important;
+    }
+    .ans{
+        line-height: 60px;
+        padding:0px;
+        font-size: 20px;
+    }
+    .button{
+        height: 30px;
+    }
+}
