@@ -78,7 +78,10 @@ li:hover{
 
 .mcq{
     margin-bottom: 20px;
-    height: 20vh;
+    height: 25vh;
+}
+.mcqcont{
+    margin-bottom:20px;
 }
 /* .row{
     margin-bottom:0px;
@@ -108,7 +111,7 @@ li:hover{
 }
 .button-container{
     position: relative;
-    bottom:2.5%;
+    bottom:0%;
     margin-top:0vh;
     text-align: center;
     /* font-size:20px */
@@ -316,15 +319,19 @@ li:hover{
 /*Break points*/
 
 
-@media screen and (min-height:599px) and (min-width:1530px) {
+@media screen and (min-height:599px) and (min-width:992px) {
     .mcq{
         margin-bottom: 20px;
         height: 15vh !important;
     }
     .ans{
         line-height: 15vh;
-        padding:0px;
+        padding:10px;
     }
+    /* .button-container{
+        bottom:-5%;
+        margin-right:10px;
+    } */
 
 }
 
@@ -358,6 +365,7 @@ li:hover{
         height: 50px;
         width:130px;
     }
+
 }
 
 @media screen and (min-width:340px) and (max-width: 376px){
@@ -395,9 +403,12 @@ li:hover{
         height: 35px;
         width:80px;
     }
-    .button-container{
-        margin-right:5px;
+    .mcqcont{
+        margin-bottom:0px;
     }
+    /* .button-container{
+        margin-right:5px;
+    } */
 }
 
 @media screen and (min-width:376px) and (max-width: 415px){
@@ -429,6 +440,9 @@ li:hover{
     }
     .button{
         height: 40px;
+    }
+    .mcqcont{
+        margin-bottom:0px;
     }
     /* .winner-pod{
         z-index: 10 !important;
@@ -485,6 +499,9 @@ li:hover{
         height: 40px;
         width: 40px;
     }
+    .mcqcont{
+        margin-bottom:0px;
+    }
 }
 
 @media screen and (min-width:516px) and (max-width: 768px){
@@ -493,12 +510,15 @@ li:hover{
     }
     .mcq{
         margin-bottom: 20px;
-        height: 75px !important;
+        height: 10vh !important;
     }
     .ans{
-        line-height: 75px;
+        line-height: 10vh;
         padding:0px;
     }   
+    .mcqcont{
+        margin-bottom:0px;
+    }
 }
 
 @media screen and (min-width:768px) and (max-width: 992px){
@@ -513,5 +533,13 @@ li:hover{
         line-height: 100px;
         padding:0px;
     }   
+    .mcqcont{
+        margin-bottom:0px;
+    }
 }
 
+@media screen and (min-width:1000px) and (min-height:692px){
+    .ques-container{
+        height: 100vh;
+    }
+}

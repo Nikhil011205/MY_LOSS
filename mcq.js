@@ -33,14 +33,14 @@ const questions = [
     },
     {
         question: "What Is The Age Of Your System",
-        options:["New (1-3)","7>","7<=","Potato"]
+        options:["New (1-3 yrs)","7> yrs","7+ yrs","Potato"]
     },
     {
-        question: "What CPU Brans",
+        question: "Which CPU Brand",
         options:["AMD","Intel","SBC","Not Sure"]
     },
     {
-        question: " What CPU Architecture?",
+        question: "What CPU Architecture?",
         options: ["x86_64 / AMD64", "x32 / AMD32", "ARM64", "Not Sure"]
     },
     {
@@ -52,11 +52,11 @@ const questions = [
         options:["1-4 GB","8GB","16<=","Not Sure"]
     },
     {
-        question: " How Much Storage ?",
+        question: "How Much Storage ?",
         options:["Flash Memory","250 GB >=","512 GB","1TB<="]
     },
     {
-        question: " Is Privacy and Security Important To You",
+        question: "Is Privacy and Security Important To You",
         options:["Yes","No","Not Sure","Sell My Data"]
     },
     {
@@ -64,7 +64,7 @@ const questions = [
         options:["Appreciated","Wiki Pages","Not Sure","Not Needed"]
     },
     {
-        question: " Any Graphics Intensive Processes?",
+        question: "Any Graphics Intensive Processes?",
         options:["Yes","No","Not Sure","Excel and Mail"]
     },
     {
@@ -76,7 +76,7 @@ const questions = [
         options:["Yes","Terminal Install","Not Sure","No"]
     },
     {
-        question: " What is Your Update Preference?",
+        question: "What is Your Update Preference?",
         options:["Rolling","Static","Stable","Not Sure"]
     }
 ]
