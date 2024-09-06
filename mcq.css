@@ -538,8 +538,8 @@ li:hover{
     }
 }
 
-@media screen and (min-width:1000px) and (min-height:692px){
+/* @media screen and (min-width:1000px) and (min-height:692px){
     .ques-container{
         height: 100vh;
     }
-}
+} */
