@@ -36,7 +36,7 @@ const questions = [
         options:["New (1-3 yrs)","7> yrs","7+ yrs","Potato"]
     },
     {
-        question: "What CPU is Your System Using",
+        question: "Which CPU Brand",
         options:["AMD","Intel","SBC","Not Sure"]
     },
     {
@@ -44,7 +44,7 @@ const questions = [
         options: ["x86_64 / AMD64", "x32 / AMD32", "ARM64", "Not Sure"]
     },
     {
-        question: "Does Your System Have A GPU/iGPU?",
+        question: "Does Your System Have A GPU?",
         options:["AMD","NVIDIA","Intel","Not Sure"]
     },
     {
@@ -52,11 +52,11 @@ const questions = [
         options:["1-4 GB","8GB","16<=","Not Sure"]
     },
     {
-        question: "How Much Storage?",
+        question: "How Much Storage ?",
         options:["Flash Memory","250 GB >=","512 GB","1TB<="]
     },
     {
-        question: "Is Privacy and Security Important To You?",
+        question: "Is Privacy and Security Important To You",
         options:["Yes","No","Not Sure","Sell My Data"]
     },
     {
@@ -301,10 +301,10 @@ function prevQuestion() {
     if(sel){
         sel.style.backgroundColor = col;
         sel.classList.remove("selected");
-        userAnswers.pop()
         chosen-=1;
     }
     if (currentQuestionIndex > 0) {
+        userAnswers.pop();
         currentQuestionIndex--;
         displayQuestion();
     }
