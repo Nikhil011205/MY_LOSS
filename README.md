@@ -10,4 +10,6 @@ Thee Neural Network has an accuracy of 80% and is trained on 100,000 data
 Just Click The Link To Your Right Or The Link Below To Get Started!
 [Linux Yourself NOW!](https://nikhil011205.github.io/MY_LOSS/)
 
+It might take a bit of time to load the results due to usage of free server
+
 Made By Nikhil Y N and Praneel Sindhole
